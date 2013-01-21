@@ -20,9 +20,10 @@
 
 ;; show line numbers
 (global-linum-mode t)
+(setq linum-format "%d ")
 
 ;; hide toolbars
-(tool-bar-mode -1)
+(menu-bar-mode -1)
 
 ;; start ido
 (require 'ido)
