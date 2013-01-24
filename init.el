@@ -29,4 +29,4 @@
 (require 'ido)
 (ido-mode t)
 
-(global-set-key "M-/" 'hippie-expand)
+(global-set-key "\M-/" 'hippie-expand)
