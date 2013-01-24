@@ -28,3 +28,5 @@
 ;; start ido
 (require 'ido)
 (ido-mode t)
+
+(global-set-key "M-/" 'hippie-expand)
