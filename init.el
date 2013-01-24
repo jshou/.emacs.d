@@ -30,3 +30,6 @@
 (ido-mode t)
 
 (global-set-key "\M-/" 'hippie-expand)
+
+;; set ruby indentation to something sensible
+(setq ruby-deep-indent-paren nil)
