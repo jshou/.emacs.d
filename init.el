@@ -34,5 +34,6 @@
 ;; set ruby indentation to something sensible
 (setq ruby-deep-indent-paren nil)
 
-;; M-backspace in term-mode
+;; add keybindings to term-mode
 (add-to-list 'term-bind-key-alist '("M-<backspace>" . term-send-backward-kill-word))
+(add-to-list 'term-bind-key-alist '("C-y" . term-paste))
