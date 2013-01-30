@@ -40,3 +40,5 @@
 
 ;; set space mode
 (setq-default indent-tabs-mode nil)
+;; remove trailing whitespace
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
