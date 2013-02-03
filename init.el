@@ -36,6 +36,8 @@
 
 ;; add keybindings to term-mode
 (add-to-list 'term-bind-key-alist '("M-<backspace>" . term-send-backward-kill-word))
+(add-to-list 'term-bind-key-alist '("C-w" . term-send-backward-kill-word))
+(add-to-list 'term-bind-key-alist '("M-d" . term-send-forward-kill-word))
 (add-to-list 'term-bind-key-alist '("C-y" . term-paste))
 
 ;; set space mode
