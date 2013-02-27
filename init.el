@@ -1,6 +1,6 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(load-theme 'tron)
+(load-theme 'tron t)
 
 ;; install multi-term
 (setq multi-term-program "/bin/zsh")
