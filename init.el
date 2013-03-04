@@ -12,17 +12,17 @@
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 ;; use utf-8 for everything
-;(setq locale-coding-system 'utf-8)
-;(set-terminal-coding-system 'utf-8)
-;(set-keyboard-coding-system 'utf-8)
-;(set-selection-coding-system 'utf-8)
-;(prefer-coding-system 'utf-8)
+(setq locale-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-selection-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
 
 ;; Use Emacs terminfo, not system terminfo
-(setq system-uses-terminfo nil)
+;(setq system-uses-terminfo nil)
 
 ;; set emacs font size
-(set-face-attribute 'default nil :height 100)
+(set-face-attribute 'default nil :height 120)
 
 ;; show line numbers
 (global-linum-mode t)
@@ -39,6 +39,12 @@
 (global-set-key (kbd "M-/") 'hippie-expand)
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-x C-b") 'buffer-menu)
+
+(setq mac-option-key-is-meta nil)
+(setq mac-command-key-is-meta t)
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier nil)
+
 
 ;; set ruby indentation to something sensible
 (setq ruby-deep-indent-paren nil)
