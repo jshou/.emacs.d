@@ -45,7 +45,6 @@
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier nil)
 
-
 ;; set ruby indentation to something sensible
 (setq ruby-deep-indent-paren nil)
 
