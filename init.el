@@ -6,6 +6,10 @@
 (setq multi-term-program "/bin/zsh")
 (require 'multi-term)
 
+;; use melpa for package management
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
 ;; use utf-8 for everything
 ;(setq locale-coding-system 'utf-8)
 ;(set-terminal-coding-system 'utf-8)
