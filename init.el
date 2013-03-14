@@ -35,7 +35,8 @@
 (require 'ido)
 (ido-mode t)
 
-(global-set-key "\M-/" 'hippie-expand)
+(global-set-key (kbd "M-/") 'hippie-expand)
+(global-set-key (kbd "C-x g") 'magit-status)
 
 ;; set ruby indentation to something sensible
 (setq ruby-deep-indent-paren nil)
