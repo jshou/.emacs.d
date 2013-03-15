@@ -7,6 +7,7 @@
 (require 'multi-term)
 
 ;; use melpa for package management
+(require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
