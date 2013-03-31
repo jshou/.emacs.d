@@ -56,6 +56,9 @@
 ;; remove trailing whitespace
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+;; set default lisp
+(setq inferior-lisp-program "sbcl")
+
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
