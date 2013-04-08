@@ -48,6 +48,9 @@
 ;; set ruby indentation to something sensible
 (setq ruby-deep-indent-paren nil)
 
+;; set javascript indent
+(setq js-indent-level 2)
+
 (show-paren-mode 1)
 
 ;; add keybindings to term-mode
