@@ -40,6 +40,8 @@
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-x C-b") 'buffer-menu)
 
+(add-to-list 'auto-mode-alist '(".hamlbars'" . haml-mode))
+
 ;; set ruby indentation to something sensible
 (setq ruby-deep-indent-paren nil)
 
