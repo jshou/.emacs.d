@@ -35,6 +35,7 @@
 ;; start ido
 (require 'ido)
 (ido-mode t)
+(setq ido-enable-flex-matching t)
 
 (global-set-key (kbd "M-/") 'hippie-expand)
 (global-set-key (kbd "C-x g") 'magit-status)
@@ -76,3 +77,4 @@
  ;; If there is more than one, they won't work right.
  '(magit-default-tracking-name-function (quote magit-default-tracking-name-branch-only))
  '(magit-status-buffer-switch-function (quote switch-to-buffer)))
+(put 'dired-find-alternate-file 'disabled nil)
