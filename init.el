@@ -76,5 +76,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(magit-default-tracking-name-function (quote magit-default-tracking-name-branch-only))
- '(magit-status-buffer-switch-function (quote switch-to-buffer)))
+ '(magit-status-buffer-switch-function (quote switch-to-buffer))
+ '(coffee-tab-width 2))
 (put 'dired-find-alternate-file 'disabled nil)
