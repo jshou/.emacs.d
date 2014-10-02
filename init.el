@@ -40,6 +40,7 @@
 (global-set-key (kbd "M-/") 'hippie-expand)
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-x C-b") 'buffer-menu)
+(global-set-key (kbd "C-x f") 'fiplr-find-file)
 
 ;; set ruby indentation to something sensible
 (setq ruby-deep-indent-paren nil)
