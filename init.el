@@ -1,6 +1,5 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(load-theme 'tron t)
 
 ;; install multi-term
 (setq multi-term-program "/bin/zsh")
@@ -11,6 +10,8 @@
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
+
+(load-theme 'ritchie t)
 
 ;; use utf-8 for everything
 (setq locale-coding-system 'utf-8)
@@ -42,6 +43,8 @@
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-x C-b") 'buffer-menu)
 (global-set-key (kbd "C-x f") 'fiplr-find-file)
+(setq fiplr-ignored-globs '((directories (".git" ".svn" "vendor" "node_modules"))
+                            (files ("*.jpg" "*.png" "*.zip" "*~"))))
 
 (setq mac-option-key-is-meta nil)
 (setq mac-command-key-is-meta t)
@@ -62,8 +65,8 @@
 (add-to-list 'term-bind-key-alist '("M-d" . term-send-forward-kill-word))
 (add-to-list 'term-bind-key-alist '("C-y" . term-paste))
 
-;; set space mode
-(setq-default indent-tabs-mode nil)
+;; set tab mode
+(setq-default indent-tabs-mode t)
 ;; remove trailing whitespace
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
@@ -86,3 +89,16 @@
  '(magit-status-buffer-switch-function (quote switch-to-buffer))
  '(coffee-tab-width 2))
 (put 'dired-find-alternate-file 'disabled nil)
+
+(add-hook 'php-mode-hook 'my-php-mode-hook)
+(defun my-php-mode-hook ()
+  "My PHP mode configuration."
+  (setq indent-tabs-mode t
+        tab-width 4
+        c-basic-offset 4
+	require-final-newline t))
+
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
