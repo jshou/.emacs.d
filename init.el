@@ -10,6 +10,7 @@
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(package-initialize)
 
 ;; use utf-8 for everything
 (setq locale-coding-system 'utf-8)
