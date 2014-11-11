@@ -65,8 +65,6 @@
 (add-to-list 'term-bind-key-alist '("M-d" . term-send-forward-kill-word))
 (add-to-list 'term-bind-key-alist '("C-y" . term-paste))
 
-;; set tab mode
-(setq-default indent-tabs-mode t)
 ;; remove trailing whitespace
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
